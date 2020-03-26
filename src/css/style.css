@@ -16,6 +16,7 @@ img {
 }
 
 .section-title {
+  text-align: center;
   display: block;
   font-size: 24px;
   /* +bold */
@@ -266,6 +267,7 @@ img {
 }
 
 .offer__title {
+  text-align: left;
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
@@ -290,6 +292,38 @@ img {
   min-height: 70px;
 }
 
+.offer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 31px;
+}
+
+.offer-text__first {
+  max-width: 224px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.offer-text__second {
+  max-width: 192px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.offer-text__link {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
 @media (max-width: 1200px) {
   .offer__input {
     width: 100%;
@@ -308,5 +342,75 @@ img {
     width: 100%;
     padding-right: 0;
   }
+}
+
+@media (max-width: 500px) {
+  .offer-text {
+    text-align: center;
+    display: block;
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
+.slider__item img {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

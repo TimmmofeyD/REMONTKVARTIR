@@ -18,6 +18,7 @@
 		padding-right: 90px
 		position: relative
  &__title
+		text-align: left
 		max-width: 360px
 		line-height: 35px
 		margin-bottom: 24px
@@ -33,6 +34,27 @@
 	&__button
 		width: 100%
 		min-height: 70px
+	&-text
+		display: flex
+		justify-content: space-between
+		width: 100%
+
+		margin-top: 31px
+		&__first
+			max-width: 224px
+			font-size: 15px
+		 font-weight: 400
+		 line-height: 24px
+		&__second
+			max-width: 192px
+			font-size: 15px
+		 font-weight: 400
+		 line-height: 24px
+		&__link
+			display: block
+			font-weight: bold
+			text-decoration: none
+			color: #000
 @media ( max-width: 1200px )
 	.offer
 		
@@ -48,3 +70,10 @@
 		&-block
 			width: 100%
 			padding-right: 0
+		
+@media ( max-width:  500px)
+	.offer
+		&-text
+			text-align: center
+			display: block
+	
