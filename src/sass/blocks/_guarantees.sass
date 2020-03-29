@@ -1,0 +1,38 @@
+.guarantee
+	width: 370px
+	height: 410px
+	margin-right: 30px
+	background-color: 
+	&__text
+		font-size: 16px
+		display: inline-block
+		margin: 27px 26px 0 26px
+		
+	&:first-child
+		background: $secondary url('../img/guarantees/man-notebook.png') no-repeat bottom
+	&:nth-child(2)
+		background: $secondary url('../img/guarantees/man-instrument.png') no-repeat bottom
+	&:last-child
+		background: $secondary url('../img/guarantees/man-wood.png') no-repeat bottom
+		margin-right: 0
+	
+	
+	&s
+		&-block
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+@media ( max-width: 1200px )
+	.guarantee
+		margin: 0 15px
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+@media ( max-width: 768px )
+	.guarantee
+		margin: 0 
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+		
