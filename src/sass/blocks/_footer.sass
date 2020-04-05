@@ -1,0 +1,62 @@
+.footer
+	position: relative
+.map
+	width: 50%
+	position: absolute
+	top: 0
+	left: 0
+.contacts
+	flex-basis: 50%
+	padding-top: 100px
+	padding-left: 200px
+	&-block
+		display: flex
+		justify-content: flex-end
+	&__title
+		display: inline-block
+		font-weight: bold
+		font-size: 22px
+		line-height: 1.4
+		margin-bottom: 100px
+	&-list
+		padding: 0
+		list-style: none
+		&__icon
+			width: 20px
+			height: 20px
+			text-align: center
+			line-height: 20px
+			margin-right: 23px
+		&__text
+			
+			font-size: 16px
+		&__link
+			color: #000000
+			font-weight: bold
+			text-decoration: none
+		&__item
+			margin-top: 39px
+			display: flex
+			align-items: flex-start
+@media ( max-width: 1200px )
+	.contacts
+		padding-left: 50px
+		padding-right: 50px
+	
+@media ( max-width: 768px )
+	.contacts
+		flex-basis: 100%
+		position: relative
+		padding-top: 40px
+		padding-bottom: 70px
+		padding-right: 0
+		padding-left: 0
+	.map
+		position: static
+		width: 100%
+		height: 100vh
+	.footer
+		display: flex
+		justify-content: space-between
+		flex-direction: column-reverse
+

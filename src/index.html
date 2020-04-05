@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
 	<meta author="Timofey Deykun">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<title>Ремонт Квартир</title>
+<!-- Yandex.Metrika counter -->
+<script
+	type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61477093, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+<noscript>
+	<div><img src="https://mc.yandex.ru/watch/61477093" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 	<nav class="navbar">
@@ -20,9 +26,10 @@
 					<div class="navbar__contacts">
 						<span class="navbar__adress">Калуга, Москва, МО</span>
 						<a href="tel:+7-983-224-85-93" class="navbar__phone">+7-983-224-85-93</a>
+
 					</div>
 					<!-- /.navbar__contacts -->
-					<button id="button" class="navbar__button button">Перезвоните мне</button>
+					<button id="button" onclick="ym(XXXXXX, 'reachGoal', 'button'); return true;" class="navbar__button button">Перезвоните мне</button>
 				</div>
 				<!-- /.navbar__info -->
 			</div>
@@ -44,15 +51,19 @@
 							<li class="hero-list__item">
 								<div class="hero-list__image">
 									<img src="img/hero/hero-clock.png" alt="">
-								</div> <span class="hero-list__text">Точно соблюдаем сроки</span></li>
+								</div> <span class="hero-list__text">Точно соблюдаем сроки</span>
+						</li>
 							<li class="hero-list__item">
 								<div class="hero-list__image">
 									<img src="img/hero/hero-calculator.png" alt="">
-								</div> <span class="hero-list__text">Рассчитаем смету на работы и материалы в день обращения</span></li>
+								</div> <span class="hero-list__text">Рассчитаем смету на работы и материалы в день обращения</span>
+							</li>
 							<li class="hero-list__item">
 								<div class="hero-list__image">
 									<img src="img/hero/hero-paintboard.png" alt="">
-								</div> <span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span></li></ul>
+								</div> <span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
+							</li>
+						</ul>
 					</div>
 					<!-- /.hero-text -->
 					<div class="hero-image"><img src="img/hero/hero-image.jpeg" alt="План квартиры"></div>
@@ -114,7 +125,6 @@
 				<div class="slider__item"><img src="img/portfolio/slider-3.jpg" alt=""></div>
 				<!-- /.slider__item -->
 			</div>
-			
 			</div>
 			<div class="arrows portfolio__arrows">
 				<div class="arrows__left"><img src="img/portfolio/left-arrow.png" alt=""></div>
@@ -277,14 +287,14 @@
 					<div class="guarantee">
 						<span class="guarantee__text">Мы дадим Вам максимальные скидки
 						у наших партнеров для закупки материалов оптом</span>
-						<!-- /.guarantee__text -->	
+						<!-- /.guarantee__text -->
 					</div>
 					<!-- /.guarantee -->
 					<div class="guarantee">
 						<span class="guarantee__text">Все, что не сможете найти в городе -
 						поможем заказать у проверенных
 						поставщиков</span>
-						<!-- /.guarantee__text -->				
+						<!-- /.guarantee__text -->
 					</div>
 					<!-- /.guarantee -->
 				</div>
@@ -331,12 +341,98 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.section sertificates -->
+		<section class="section brif">
+			<div class="container">
+				<div class="brif-block">
+					<div class="interview brif__interview">
+						<h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h3>
+						<span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+						<ul class="interview-list">
+							<li class="interview-list__item">
+								<span class="interview-list__counter">1</span> <!-- /.interview-list__counter -->
+								<span class="interview-list__text">Какова площадь помещения?</span> <!-- /.interview-list__text --></li>
+							<!-- /.interview-list__item -->
+							<li class="interview-list__item">
+								<span class="interview-list__counter">2</span> <!-- /.interview-list__counter -->
+								<span class="interview-list__text">У Вас новостройка или вторичное жилье?</span> <!-- /.interview-list__text --></li>
+							<!-- /.interview-list__item -->
+							<li class="interview-list__item">
+								<span class="interview-list__counter">3</span> <!-- /.interview-list__counter -->
+								<span class="interview-list__text">Где находится помещение, в котором будет
+								производиться ремонт?</span> <!-- /.interview-list__text --></li>
+							<!-- /.interview-list__item -->
+							<li class="interview-list__item">
+								<span class="interview-list__counter">4</span> <!-- /.interview-list__counter -->
+								<span class="interview-list__text">Назначение помещения?</span> <!-- /.interview-list__text --></li>
+							<!-- /.interview-list__item -->
+						</ul>
+						<!-- /.interview-list -->
+					</div>
+					<!-- /.interview brif__interview -->
+					<div class="form brif__form">
+
+						<h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
+						<span class="form__subtitle">Для этого заполните форму ниже</span>
+						<form action="#" id="brif-form">
+							<input type="text" name='username'   class="brif__input input" placeholder="Ваше имя">
+							<input type="tel" name='phone' class="brif__input input phone"  placeholder="Ваш телефон">
+							<button class="button brif__button">Рассчитать стоимость</button>
+							<span class="form__description">Мы перезвоним Вам в течение 60 секунд
+</span>
+							<!-- /.button brif__button -->
+						</form>
+					</div>
+					<!-- /.form brif__form -->
+				</div>
+				<!-- /.brif-block -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.section brif -->
 	</main>
+	<footer class="footer">
+		<div class="map" id='map'><script type="text/javascript" charset="utf-8" async
+			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1b2056e360f295439f8318d98375ac93a46b3d5a09f52b3a11fdbbdd78fdc42d&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script></div>
+		<div class="container">
+			<div class="contacts-block">
+				<div class="contacts">
+					<h3 class="conatacts__title">Приезжайте к нам в гости!
+					Проконсультируем Вас
+					по всем вопросам ремонта</h3>
+					<ul class="contacts-list">
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="img/footer/map-placeholder.png" alt="">
+						</span><span class="contacts-list__text">
+							г. Москва<br>
+							<strong>ул. Ленинга, д. 10,
+							корпус 2, оф. 308</strong>
+						</span></li>
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon">
+							<img src="img/footer/clock-with-white-face.png" alt="">
+						</span><span class="contacts-list__text">
+							Режим работы: <br>		
+						<strong>с 9:00 до 18:00</strong>
+						</span></li>
+						<li class="contacts-list__item">
+							<span class="contacts-list__icon">
+						<img src="img/footer/phone-call-button.png" alt="">
+						</span><span class="contacts-list__text">
+							Телефон: <br>	
+							<a class="contacts-list__link" href="tel:+7-983-224-85-93">+7-983-224-85-93</a>
+						</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+</footer>
 	<div id="modal" class="modal">
 		<div class="modal-dialog">
 			<button id="close" class="modal-dialog__close">&times;</button>
 			<h4 class="modal-dialog__title">
-				Всплывающее окно	</h4>		
+				Всплывающее окно
+			</h4>	
 		<!-- /.modal-dialog -->
 	</div>
 	<!-- /.modal -->
@@ -345,9 +441,28 @@
 		<script src="js/modal.js" ></script>
 	<script src="js/slick.min.js" ></script>
 	<script src="js/wow.min.js" ></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script>
 		new WOW().init();
-		$(document).ready(function(){
+		$(document).ready(function(){	
+			$('#brif-form').validate({
+				rules: {
+					username: {
+				required: true,
+				minlength: 2
+					},
+				phone: 'required'
+				},
+				messages:{
+					username: {
+						required: "Укажите имя",
+						minlength: jQuery.validator.format('Oсталось символов: 1')
+						},
+					phone:'Укажите ваш телефон'
+				}
+			});
+			$('.phone').mask('+7 (999) 999-99-99')
 			$('.slider').slick({
 				slidesToShow: 3,
 				slidesToScroll: 1,
@@ -366,7 +481,7 @@
 						settings: {
 							slidesToShow: 1,
 							slidesToScroll: 1
-						}					
+						}	
 					}
 				]
 			});
